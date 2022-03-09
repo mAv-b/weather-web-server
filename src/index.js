@@ -15,12 +15,12 @@ const partialsPath = path.join(__dirname,'../templates/partials');
 const servingFilesPath = path.join(__dirname,'../public');
 const app = express();
 
-// app.use('/',(req, res, next)=>{
-//     const regexp = /pages/;
-//     if(req.url.match(regexp)){
-//         res.status(403).end('403 Forbidden');
-//     }else next();
-// });
+app.use('/',(req, res, next)=>{
+    const regexp = /pages/;
+    if(req.url.match(regexp)){
+        res.status(403).end('403 Forbidden');
+    }else next();
+});
 app.use(express.static(servingFilesPath));
 app.set('views',viewsPath);
 app.set('view engine','hbs');
