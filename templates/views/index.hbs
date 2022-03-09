@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+            <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+            <link rel="stylesheet" href="styles/style.css" />
+            <meta charset="utf-8" />
+            <title>Weather</title>
+
+        </head>
+        <body>
+            
+            <main>
+                {{>weathercard}}
+                {{>infocard}}
+            </main>
+            <aside>
+                {{>aside_element}}
+            </aside>
+
+        </body>
+        <script src="applications/app.js"></script>
+
+    </html>

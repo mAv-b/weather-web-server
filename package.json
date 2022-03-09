@@ -1,0 +1,19 @@
+{
+  "name": "web-server-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "hbs": "^4.2.0",
+    "mapbox-gl": "^2.7.0",
+    "request": "^2.88.2",
+    "xml-js": "^1.6.11"
+  }
+}

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    /* background-image: url('/images/cloudy-day.jpeg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 75%;
+    height: 100%;
+    /* background-image: url('/images/cloudy-day.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#weather-card{
+    display: flex;
+    flex-direction: row;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border-radius: 40px;
+    color: #ffffff;
+    width: 90%;
+    height: 45%;
+}
+#left-blck{
+    border-radius: 30px 0px 0px 30px;
+    background-color: #383838;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    width: 45%;
+    height: 100%;
+}
+#left-blck div{
+    margin-left: 0.5rem;
+}
+#right-blck{
+    color: #ffffff;
+    border-radius: 0px 30px 30px 0px;
+    background-color: rgba(20, 20, 20,0.4);
+    width: 60%;
+    box-sizing: border-box;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#right-blck div:first-child{
+    display: flex;
+    flex-direction: row;
+}
+#right-blck div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.font-type-one{
+    font-size: 28px;
+}
+.font-type-two{
+    font-size: 20px;
+}
+.font-type-three{
+    font-size: 13px;
+}
+
+#main-temperature-card{
+    font-size: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#main-temperature-card span{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+#info-card{
+    background-color: #383838;
+    color: #ffffff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 50%;
+}
+#info-card div:first-child{
+    width: 50%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+#map{
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 0px 0px 30px;
+    background-color: rgba(246, 246, 246, 0.8);
+    width: 25%;
+}
+#search-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    width: 75%;
+}
+label{
+    color: #000000;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+}
+#search{
+    border-radius: 5px;
+    width: 100%;
+    background-color: #4D4D4D;
+    color: #efefef;
+    padding: 0.6rem 0.3rem;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+::placeholder{
+    color: #efefef;
+}
+button{
+    margin-top: 10px;
+    background-color: #4D4D4D;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    align-self: flex-end;
+    border-radius: 5px;
+    color: #efefef;
+    border: none;
+    padding: 0.2rem 0.8rem;
+    font-size: 1.2rem;
+}
+hr{
+    width: 85%;
+    background-color: #383838;
+    margin: 0 auto;
+}
+
+#news-section, #climate-news-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#news-section > div:first-child, #climate-news-section > div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#news-section > div:first-child > span:last-child, #climate-news-section > div:first-child > span:last-child {
+    font-size: 10px;
+}
+#list-news, #list-reed{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    overflow-y: auto;
+}
+.item-news, .item-reed{
+    margin-left: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.item-news img, .item-reed img{
+    width: 70px;
+    height: 70px;
+}
+.item-news a p, .item-reed a p{
+    width: 60%;
+    margin-left: 1rem;
+    color: #383838;
+}
+a{
+    color: #383838;
+    text-decoration: none;
+}
+.item-news:hover, .item-reed:hover{
+    background-color: #C4C4C4;
+}
