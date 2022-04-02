@@ -1,5 +1,4 @@
 const express = require('express');
-const resquest = require('request');
 const hbs = require('hbs');
 const path = require('path');
 const weather = require('../utils/weather-api.js');
@@ -7,8 +6,8 @@ const imagesFilter = require('../utils/is-day-api.js');
 const localNews = require('../utils/day-news-NYT-api.js');
 const reeds = require('../utils/reeds-NYT-api.js');
 const {geocode,incremental_geocode} = require('../utils/geocode-api.js');
-const { request } = require('http');
-const { query } = require('express');
+
+const port = process.env.PORT || '3000';
 
 const viewsPath = path.join(__dirname,'../templates/views');
 const partialsPath = path.join(__dirname,'../templates/partials');
