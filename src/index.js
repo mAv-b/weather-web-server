@@ -7,7 +7,7 @@ const localNews = require('../utils/day-news-NYT-api.js');
 const reeds = require('../utils/reeds-NYT-api.js');
 const {geocode,incremental_geocode} = require('../utils/geocode-api.js');
 
-const port = process.env.PORT || '3000';
+const port = process.env.PORT || 3000;
 
 const viewsPath = path.join(__dirname,'../templates/views');
 const partialsPath = path.join(__dirname,'../templates/partials');
@@ -111,6 +111,6 @@ app.get('/*',(req,res)=>{
     res.status(404).send('Not Exist')
 });
 
-app.listen('3000',()=>{
+app.listen(port,()=>{
     console.log('rodando em 3000');
 })

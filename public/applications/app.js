@@ -18,7 +18,7 @@ document.querySelector('body').onload = function(){
 
 function requestWeather(txt,txtNotInput){
     const param = (txt.value||txtNotInput);
-    const path = 'http://localhost:3000/map/search/' + param;
+    const path = './map/search/' + param;
     fetch(path)
         .then(data=>data.json())
         .then(data=>{
